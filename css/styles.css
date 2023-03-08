@@ -342,6 +342,7 @@ input {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
+  position: relative;
 }
 
 .form-item input {
@@ -349,11 +350,26 @@ input {
   border-radius: 4px;
   height: 40px;
   outline: none;
+  padding-left: 42px;
 }
 
 .form-item .form-data:focus,
 .form-item textarea:focus {
   border: 1px solid #2196F3;
+}
+
+.form-item .form-data:focus+svg {
+  fill: var(--logo-color);
+}
+
+.form-item svg {
+  position: absolute;
+  top: 32px;
+  left: 15px;
+}
+
+.form-item svg:focus {
+  fill: var(--logo-color);
 }
 
 .comments {
@@ -369,6 +385,7 @@ input {
   align-self: center;
   display: flex;
   margin-top: 10px;
+  position: relative;
 
 }
 
@@ -735,4 +752,67 @@ input {
 
 #location {
   color: #FFFFFF;
+}
+
+.subscription {
+  margin-left: 23px;
+}
+
+.subscription h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0px 0px 20px 0px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.newsletter-form input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  height: 50px;
+  width: 358px;
+  background: transparent;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+}
+
+.newsletter-form input:focus {
+  border: 1px solid #2196F3;
+}
+
+.newsletter-form button {
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #2196F3;
+  padding: 0px;
+  gap: 25px;
+  cursor: pointer;
 }
