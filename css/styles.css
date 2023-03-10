@@ -364,7 +364,7 @@ input {
 
 .form-item svg {
   position: absolute;
-  top: 32px;
+  top: 50%;
   left: 15px;
 }
 
@@ -389,12 +389,40 @@ input {
 
 }
 
+.replace-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.information-form input[type="checkbox"]:checked+.replace-checkbox {
+  background-color: var(--logo-color);
+  border-color: var(--logo-color);
+}
+
 .terms-and-conditions input {
   margin-right: 7px;
+  display: none;
 }
 
 .terms-and-conditions .link {
   color: var(--logo-color);
+}
+
+.terms-and-conditions svg {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  fill: white;
+  opacity: 0;
+  left: 2.5px;
+  top: 2.5px;
+}
+
+.information-form input[type="checkbox"]:checked+.replace-checkbox+svg {
+  opacity: 1;
 }
 
 .is-hidden {
