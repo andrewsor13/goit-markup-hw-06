@@ -176,7 +176,7 @@ input {
   text-align: center;
   letter-spacing: 0.03em;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  padding: 6px 22px;
 }
 
 .filter-list:hover {
@@ -681,6 +681,7 @@ input {
   align-items: center;
   justify-content: center;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .customers-icon svg {
